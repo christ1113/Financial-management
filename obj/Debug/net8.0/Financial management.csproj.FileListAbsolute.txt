@@ -144,3 +144,4 @@ D:\Project\Financial management\obj\Debug\net8.0\refint\Financial management.dll
 D:\Project\Financial management\obj\Debug\net8.0\Financial management.pdb
 D:\Project\Financial management\obj\Debug\net8.0\Financial management.genruntimeconfig.cache
 D:\Project\Financial management\obj\Debug\net8.0\ref\Financial management.dll
+d:\Project\Financial management\obj\Debug\net8.0\Financial management.sourcelink.json

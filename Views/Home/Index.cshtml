@@ -1,8 +1,62 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    @* 網頁的名字 *@
 }
 
 <div class="text-center">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="banner1">
+                <span>什麼!你兩年存到頭期款?</span>
+            </div>
+            <div class="carousel-item" id="banner2">
+                <span>因為我用了理財小豬</span>
+            </div>
+            <div class="carousel-item" id="banner3">
+                <span>環遊世界、買房、買車不是夢想<br>快來試試看理財小豬</span>
+            </div>
+        </div>
+    </div>
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@section indexCSS {
+    <style>
+        .carousel {
+            width: 100vw;
+            margin: -1rem 0px 0px;
+            height: 500px;
+        }
+        .carousel-item {
+            width: 100vw;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #banner1 {
+            background-image: url('/images/banner1.jpg');
+        }
+
+        #banner2 {
+            background-image: url('/images/banner2.jpg');
+        }
+
+        #banner3 {
+            background-image: url('/images/banner3.jpg');
+        }
+    </style>
+}
+
+@section layoutCSS {
+    <style>
+        .container {
+            max-width: 100vw !important;
+            margin: -1rem 0px 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+    </style>
+}
