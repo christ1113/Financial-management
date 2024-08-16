@@ -1,51 +1,71 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-    @* 網頁的名字 *@
-}
-
-<div class="text-center">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+﻿<div class="text-center">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
         <div class="carousel-inner">
-            <div class="carousel-item active" id="banner1">
+            <div class="carousel-item active">
                 <span>什麼!你兩年存到頭期款?</span>
             </div>
-            <div class="carousel-item" id="banner2">
+            <div class="carousel-item">
                 <span>因為我用了理財小豬</span>
             </div>
-            <div class="carousel-item" id="banner3">
-                <span>環遊世界、買房、買車不是夢想<br>快來試試看理財小豬</span>
+            <div class="carousel-item">
+                <span>現在就來註冊理財小豬吧</span>
             </div>
         </div>
     </div>
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>理財小豬-財務管理</h1>
+    <h2>我們能提供甚麼服務</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="" alt="">
+            <p>紀錄每筆收入、支出紀錄</p>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <p>自由添加帳務的備註</p>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <p>短、中、長期的金額報表</p>
+        </div>
+    </div>
+    <div class="slogan">
+        <p class="text-slogan slogan-right" data-aos="fade-right">財務管理及早進行</p>
+        <p class="text-slogan slogan-left" data-aos="fade-left">夢想現在開始堆砌</p>
+    </div>
+
 </div>
 
 @section indexCSS {
     <style>
-        .carousel {
-            width: 100vw;
+        .text-center {
             margin: -1rem 0px 0px;
-            height: 500px;
         }
         .carousel-item {
             width: 100vw;
             height: 500px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            background-color: #EF5F5F;
         }
-
-        #banner1 {
-            background-image: url('/images/banner1.jpg');
+        .carousel-item >span{
+            line-height: 500px;
+            color: white;
+            font-size: 3rem;
         }
-
-        #banner2 {
-            background-image: url('/images/banner2.jpg');
+        .carousel{
+            width: 100vw;
+            height: 500px;
+            margin: 1rem 0px 0px;
         }
-
-        #banner3 {
-            background-image: url('/images/banner3.jpg');
+        .text-slogan{
+            color: black;
+            font-size: 5rem;
+        }
+        .slogan-right{
+            text-align: start;
+            margin:5% 0 0 15%;
+        }
+        .slogan-left{
+            text-align: end;
+            margin:5% 15% 0 0;
         }
     </style>
 }
